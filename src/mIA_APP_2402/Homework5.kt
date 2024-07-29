@@ -5,7 +5,7 @@ import kotlin.system.exitProcess
 //Created by Abusaeed Shuvo
 
 fun main() {
-    val bloodGroups= listOf("a+","a-","b+","b-","o+","o-","ab+","ab-")
+    val bloodGroups = listOf("a+", "a-", "b+", "b-", "o+", "o-", "ab+", "ab-")
     //Get Donor Data
     println("Enter Blood Donor name: ")
     val donorName = readln().trim().toString().capitalize()
@@ -18,7 +18,7 @@ fun main() {
     }
     println("Enter donor blood group(ex:AB-): ")
     val donorBloodGroup = readln().trim().toString().toLowerCase()
-    if (donorBloodGroup !in bloodGroups){
+    if (donorBloodGroup !in bloodGroups) {
         println("$donorBloodGroup is not a real blood group")
         exitProcess(0)
     }
@@ -36,7 +36,7 @@ fun main() {
     val receiverName = readln().trim().toString().capitalize()
     println("Enter receiver blood group(ex:AB-): ")
     val receiverBloodGroup = readln().trim().toString().toLowerCase()
-    if (receiverBloodGroup !in bloodGroups){
+    if (receiverBloodGroup !in bloodGroups) {
         println("$donorBloodGroup is not a real blood group")
         exitProcess(0)
     }
@@ -56,7 +56,7 @@ fun main() {
 
 //Logic for blood donation
 fun checkBloodStatus(donor: String, receiver: String): Boolean {
-    val bloodDonationStatus:Boolean
+    val bloodDonationStatus: Boolean
 
     when (receiver) {
         "a+" -> bloodDonationStatus = donor == "a+" || donor == "a-" || donor == "o+" || donor == "o-"

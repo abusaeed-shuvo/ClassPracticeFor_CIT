@@ -22,8 +22,8 @@ fun printId(name: String, age: Int, height: Double, weight: Double) {
 fun prettyPrint(user: String, age: Int, height: Double, weight: Double) {
 
     println("* Hi! I am $user! ")
-    println( "* I am $age years old ")
+    println("* I am $age years old ")
     println("* I am $height ft tall ")
-    println( "* I weight $weight kg ")
+    println("* I weight $weight kg ")
 
 }

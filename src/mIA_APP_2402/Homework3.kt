@@ -2,7 +2,7 @@ package mIA_APP_2402
 
 fun main() {
     val temperature = 23
-getWeather(temperature)
+    getWeather(temperature)
 }
 
 
@@ -13,7 +13,7 @@ fun getWeather(temperature: Int) {
         println("Cold")
     } else if (temperature in 20..25) {
         println("Normal")
-    } else  {
+    } else {
         println("Hot")
-            }
+    }
 }
