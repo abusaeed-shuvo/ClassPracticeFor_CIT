@@ -1,4 +1,4 @@
-package mIA_APP_2402
+package mIA_APP_2402_OOP
 
 fun main() {
     val plant1 = PowerPlant(900)
