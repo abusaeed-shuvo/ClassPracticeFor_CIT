@@ -21,9 +21,11 @@ class Student(name: String, age: Int, currentClass: Int, roll: Int) : Human(name
     }
 
     fun showStatus() {
+        filler(30)
         println("Student Details:")
         showHumanInfo()
         showStudentInfo()
+        filler(30)
     }
 
     private fun showGrade() {
@@ -39,6 +41,5 @@ class Student(name: String, age: Int, currentClass: Int, roll: Int) : Human(name
         println("Roll: $currentRoll")
         showGrade()
     }
-
 
 }
